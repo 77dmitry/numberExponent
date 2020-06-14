@@ -11,7 +11,7 @@ public class Main {
         List<Integer> integerList = new ArrayList<>();
 
         for (int i = 10000; i > 0; i--) {
-            if (determineTheDegreeOfNumber(i, 4)) {
+            if (determineTheDegreeOfNumber(i, 4)) {   //replace 4 with any number whose degree we need
                 integerList.add(i);
                 System.out.println("Degree of = " + i);
             }
@@ -21,10 +21,10 @@ public class Main {
         IntStream.range(1,10000)
                 .filter(x -> {
                     while (true) {
-                        if (x % 3 != 0) {
+                        if (x % 3 != 0) {          //replace 3 with any number whose degree we need
                             break;
                         }
-                        x /= 3;
+                        x /= 3;                    //replace 3 with any number whose degree we need
                         if (x == 1) {
                             return true;
                         }
